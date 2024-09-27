@@ -1,0 +1,7 @@
+services:
+    cdn:
+        image: ${IMAGE_NAME}
+        container_name: ${CONTAINER_NAME}
+        volumes:
+            - ./volumes/content:/usr/share/nginx/html:ro
+        restart: always
